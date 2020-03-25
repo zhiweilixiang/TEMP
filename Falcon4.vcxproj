@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Remote|Win32">
+      <Configuration>Remote</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Freefalcon</ProjectName>
+    <ProjectGuid>{B9BCF143-4CB4-45CE-8A65-8A0C54768E58}</ProjectGuid>
+    <RootNamespace>Falcon4</RootNamespace>
+    <SccProjectName />
+    <SccLocalPath>.</SccLocalPath>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Remote|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Remote|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\build/debug_win32\</OutDir>
+    <IntDir>.\build/debug_win32\</IntDir>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <LinkIncremental />
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\WinDDK\7600.16385.1\inc\atl71;C:\DX81SDK\include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\WinDDK\7600.16385.1\lib\ATL\i386;C:\DX81SDK\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>./build/release_win32/\</OutDir>
+    <IntDir>./build/release_win32/\</IntDir>
+    <ExtensionsToDeleteOnClean>*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat%3b*.asm%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\DX81SDK\include;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Remote|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>Falclib\Include;.\;codelib\include;Vu2\Include;Sim\Include;Campaign\Include;UI\Include;Graphics\Include;amd\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WINDOWS_IGNORE_PACKING_MISMATCH;_WINDOWS;CAMPTOOL;_DEBUG;_LIB;TARGET=m_i486;WIN32;STRICT;WIN32_LEAN_AND_MEAN;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\build/debug_win32/Freefalcon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\build/debug_win32/</AssemblerListingLocation>
+      <ObjectFileName>.\build/debug_win32/</ObjectFileName>
+      <ProgramDataBaseFileName>.\build/debug_win32/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\build/debug_win32\ResMgr\ResMgr.lib;LandH\Lib\st80w.lib;d3dx.lib;comsupp.lib;amd\lib\debug\amd3d.lib;winspool.lib;ole32.lib;oleaut32.lib;odbc32.lib;odbccp32.lib;oldnames.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;advapi32.lib;shell32.lib;uuid.lib;winmm.lib;vfw32.lib;wsock32.lib;dsound.lib;dxguid.lib;dinput8.lib;ddraw.lib;.\build/debug_win32\crashhandler\crashhandler.lib;extlibs\dbghelp.lib;.\build/debug_win32\Graphics\nvdxt\nvdxt.lib;.\build/debug_win32\Graphics\DXEngine\DXEngine.lib;.\build\debug_win32\Sim\Aircraft\Aircraft.lib;version.lib;extlibs\nvDXTlibMT.lib;extlibs\nvDXTlibMT7.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./build/debug_win32/Freefalcon.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>./AMD/lib/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\build/debug_win32/Freefalcon.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\build/debug_win32/Freefalcon.map</MapFileName>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\build/debug_win32/Falcon4.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4430 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>Falclib\Include;.\;codelib\include;Vu2\Include;Sim\Include;Campaign\Include;UI\Include;Graphics\Include;amd\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_LIB;TARGET=m_i486;WIN32;STRICT;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0500;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderOutputFile>./build/release_win32/Freefalcon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput />
+      <AssemblerListingLocation>.\</AssemblerListingLocation>
+      <ObjectFileName>./build/release_win32/</ObjectFileName>
+      <ProgramDataBaseFileName>./build/release_win32/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /FIXED:NO /FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>C:\DX81SDK\lib\d3dx.lib;C:\DX81SDK\lib\dsound.lib;C:\DX81SDK\lib\dxguid.lib;C:\DX81SDK\lib\dinput8.lib;C:\DX81SDK\lib\ddraw.lib;legacy_stdio_definitions.lib;.\build/release_win32\ResMgr\ResMgr.lib;.\build/release_win32\Graphics\DXEngine\DXEngine.lib;libCMT.lib;libCPMT.lib;atls.lib;delayimp.lib;Landh\Lib\st80w.lib;comsupp.lib;amd\lib\release\amd3d.lib;oldnames.lib;comctl32.lib;winmm.lib;vfw32.lib;wsock32.lib;.\build/release_win32\crashhandler\crashhandler.lib;extlibs\dbghelp.lib;version.lib;.\build/release_win32\Graphics\nvdxt\nvdxt.lib;extlibs\nvDXTlibMT.lib;extlibs\nvDXTlibMT7.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Freefalcon.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)FFViper.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)FFViper.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <TurnOffAssemblyGeneration>false</TurnOffAssemblyGeneration>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\build/release_win32/Falcon4.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Remote|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>Falclib\Include;.\;codelib\include;Vu2\Include;Sim\Include;Campaign\Include;UI\Include;Graphics\Include;amd\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_LIB;TARGET=m_i486;WIN32;STRICT;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderOutputFile>.\build/release_win32/Falcon4.pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerListingLocation>.\</AssemblerListingLocation>
+      <ObjectFileName>.\build/release_win32/</ObjectFileName>
+      <ProgramDataBaseFileName>.\build/release_win32/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 /FIXED:NO /FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>.\build/release_win32\ResMgr\ResMgr.lib;libCMT.lib;libCPMT.lib;atls.lib;delayimp.lib;Landh\Lib\st80w.lib;d3dx.lib;comsupp.lib;amd\lib\release\amd3d.lib;oldnames.lib;comctl32.lib;winmm.lib;vfw32.lib;wsock32.lib;dsound.lib;dxguid.lib;dinput8.lib;ddraw.lib;.\build/release_win32\crashhandler\crashhandler.lib;extlibs\dbghelp.lib;version.lib;.\build/release_win32\Graphics\nvdxt\nvdxt.lib;extlibs\nvDXTlibMT.lib;extlibs\nvDXTlibMT7.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)RedViper.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)RedViper.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)RedViper.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\build/release_win32/Falcon4.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\src\F4Config.cpp" />
+    <ClCompile Include="Ui\Src\Winmain.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Falclib\Include\falcon4.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Falclib\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Falclib\Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Remote|Win32'">Falclib\Include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ComSup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Falclib\Include\4.ico" />
+    <Image Include="Falclib\Include\Bigbmap.bmp" />
+    <Image Include="Falclib\Include\Bitmap1.bmp" />
+    <Image Include="Falclib\Include\bitmap8.bmp" />
+    <Image Include="Falclib\Include\bitmap9.bmp" />
+    <Image Include="Falclib\Include\Falcon4.ico" />
+    <Image Include="Falclib\Include\Font1.bmp" />
+    <Image Include="Falclib\Include\Mainfnt.BMP" />
+    <Image Include="Falclib\Include\mainfnto.bmp" />
+    <Image Include="Falclib\Include\midfnt.bmp" />
+    <Image Include="Falclib\Include\midfnton.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Falclib\Include\cur00001.cur" />
+    <None Include="Falclib\Include\cursor.cur" />
+    <None Include="Falclib\Include\Cursor1.cur" />
+    <None Include="Falclib\Include\Cursor2.cur" />
+    <None Include="Falclib\Include\Cursor3.cur" />
+    <None Include="Falclib\Include\Cursor4.cur" />
+    <None Include="Falclib\Include\Cursor5.cur" />
+    <None Include="Falclib\Include\cursor6.cur" />
+    <None Include="FALCLIB\INCLUDE\cursor7.cur" />
+    <None Include="FALCLIB\INCLUDE\cursor8.cur" />
+    <None Include="Falclib\Include\drag_rm.cur" />
+    <None Include="Falclib\Include\f16.cur" />
+    <None Include="Falclib\Include\f16_on.cur" />
+    <None Include="Falclib\Include\f16_on_r.cur" />
+    <None Include="Falclib\Include\f16_rm.cur" />
+    <None Include="Falclib\Include\HDRAGON.cur" />
+    <None Include="Falclib\Include\HDRAGRM.cur" />
+    <None Include="Falclib\Include\hdrag_of.cur" />
+    <None Include="Falclib\Include\listf16.cur" />
+    <None Include="Falclib\Include\loading.cur" />
+    <None Include="Falclib\Include\mainfnt.fnt" />
+    <None Include="Falclib\Include\mapzoom.cur" />
+    <None Include="Falclib\Include\midfnt.fnt" />
+    <None Include="Falclib\Include\not.cur" />
+    <None Include="Falclib\Include\stpt.cur" />
+    <None Include="Falclib\Include\stpt_dra.cur" />
+    <None Include="Falclib\Include\target.cur" />
+    <None Include="Falclib\Include\text.cur" />
+    <None Include="Falclib\Include\ui_add_b.cur" />
+    <None Include="Falclib\Include\ui_add_f.cur" />
+    <None Include="Falclib\Include\ui_add_p.cur" />
+    <None Include="Falclib\Include\ui_add_s.cur" />
+    <None Include="Falclib\Include\ui_add_t.cur" />
+    <None Include="Falclib\Include\ui_drag_.cur" />
+    <None Include="Falclib\Include\ui_erase.cur" />
+    <None Include="Falclib\Include\ui_paint.cur" />
+    <None Include="Falclib\Include\vdrag.cur" />
+    <None Include="Falclib\Include\vdragon.cur" />
+    <None Include="Falclib\Include\vdrag_rm.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ACMI\Acmi.vcxproj">
+      <Project>{4b65f64a-c572-44da-834f-47cdde6381fe}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\ATC\ATC.vcxproj">
+      <Project>{dd59f380-d8f1-416d-a7a7-081fc85be7b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\CAMPLIB\CampLib.vcxproj">
+      <Project>{137e2465-7871-46ab-990a-8b53b26e6067}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\CAMPTASK\CampTask.vcxproj">
+      <Project>{9f3dc08d-f3ab-45ba-bdec-d6e416c5c09a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\CAMPTOOL\CampTool.vcxproj">
+      <Project>{d7932b34-4576-43ba-9287-757c91c1f09b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\CAMPUI\CampUI.vcxproj">
+      <Project>{ab408b12-a8e9-4ba2-a312-92df930559ef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CAMPAIGN\CAMPUPD\CampUpd.vcxproj">
+      <Project>{1b95ebf6-d3a4-49f1-8db7-cb3058a5ffcf}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="codelib\resources\reslib\ResMgr.vcxproj">
+      <Project>{637040b7-e832-4567-ab76-56a0521afa9e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="codelib\tools\lists\Lists.vcxproj">
+      <Project>{0052e7e5-99e4-45a5-af65-89c997da37a1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="comms\Comms.vcxproj">
+      <Project>{32eab4b3-5b0d-4205-8dce-99ff97b7eea5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="crashhandler\crashhandler.vcxproj">
+      <Project>{06fedab4-0b59-4b15-8b9b-cc74f4d96c07}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FALCLIB\FalcLib.vcxproj">
+      <Project>{279b8deb-3c4a-4b2c-9055-aa50f7405219}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="FalcSnd\FalcSnd.vcxproj">
+      <Project>{f08ab66a-0c6f-4382-97d7-c46c375d3c24}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\3Dlib\3DLib.vcxproj">
+      <Project>{13256db2-a84d-4755-9efc-beecda61713c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\BSPlib\BSPLib.vcxproj">
+      <Project>{a9af41a2-348d-40fc-a7ad-601a944e1d2f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\DDstuff\DDStuff.vcxproj">
+      <Project>{8ed5d803-eff2-4b5b-86af-831ff6a5a7f7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\DXEngine\DXEngine.vcxproj">
+      <Project>{59beca8e-1370-4d6e-bca7-c6948601471a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\nvdxt\nvdxt.vcxproj">
+      <Project>{d350e25e-8996-47c9-b3ef-d27986d93920}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Objects\Objects.vcxproj">
+      <Project>{4a1abfed-deb8-4e1f-9b8b-7dd0ec45f433}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Renderer\Renderer.vcxproj">
+      <Project>{6275f50c-0337-4201-9cdb-f58fd5a66d65}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Terrain\Terrain.vcxproj">
+      <Project>{fcea447d-b717-4c0e-abdb-25355effd63b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Texture\Texture.vcxproj">
+      <Project>{8a0e07a2-5623-4742-ad92-adc5310c425a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Utils\Utils.vcxproj">
+      <Project>{a0377aae-3c21-4841-ba46-333b7835490c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Graphics\Weather\Weather.vcxproj">
+      <Project>{7b84e881-f7a3-41d0-802a-6c9238018427}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="movie\Movie.vcxproj">
+      <Project>{d2f5ab8e-a793-4817-a476-3fb9f9acb384}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\Aircraft\Aircraft.vcxproj">
+      <Project>{7937590f-ba3e-4537-87e3-98863770ac81}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\Airframe\Airframe.vcxproj">
+      <Project>{3042720a-4b53-4b35-a354-031a0d79c226}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\BOMB\Bomb.vcxproj">
+      <Project>{916c9938-fb28-4452-92b7-ff27df0f858f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\Cockpit\Cockpit.vcxproj">
+      <Project>{c008f3f5-c2a9-49c0-8798-30d3b83a6cc2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\DIGI\Digi.vcxproj">
+      <Project>{36a59546-6e25-4436-b4f5-c113decccf3c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\DISPLAYS\Displays.vcxproj">
+      <Project>{30f114e1-84f8-4c54-b897-97baee1cf481}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\eject\Eject.vcxproj">
+      <Project>{d8956702-2871-46f0-82d5-62034c5f7285}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\FAULTS\Faults.vcxproj">
+      <Project>{b1251abe-8bbe-4d89-b9c4-f253c4760855}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\FCC\FCC.vcxproj">
+      <Project>{8f024cca-883d-4a35-aae1-99169c50b94e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\FEATURE\Feature.vcxproj">
+      <Project>{9ab683d2-c834-4543-bf4b-f4c50ad5d16e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\GROUND\Ground.vcxproj">
+      <Project>{335948b2-69eb-4949-a264-a5a14abe5bda}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\GUNS\Guns.vcxproj">
+      <Project>{3c79fe0f-78f0-4451-99a9-e2ee9cefe39a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\hdigi\HDigi.vcxproj">
+      <Project>{30ba2dfe-d99e-4576-986a-834b868befd9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\Helo\Helo.vcxproj">
+      <Project>{ba98ef88-f5fa-4bfd-a6c8-1ea4445026c9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\ICP\ICP.vcxproj">
+      <Project>{f0f3c561-1bef-48c0-9708-9c588f326db4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\IRST\Irst.vcxproj">
+      <Project>{f02bf74b-fdb5-4e64-b232-554ade43df1a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\MISSILE\Missile.vcxproj">
+      <Project>{d3b8701d-46c8-425a-bf3e-2d856ed8f732}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\Navaids\Navaids.vcxproj">
+      <Project>{25056c8f-66b0-4e5f-9f93-2e0ba7a22c4c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\OTWDRIVE\OTWDrive.vcxproj">
+      <Project>{501002db-c2c6-4963-968f-991a56811a75}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\RADAR\Radar.vcxproj">
+      <Project>{0a406638-92b3-4109-97a4-8ce1391550e0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\RWR\Rwr.vcxproj">
+      <Project>{5afb5b41-122d-4929-9ec6-279f88934dd9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\SIMDRIVE\SimDrive.vcxproj">
+      <Project>{d180a90e-67bf-46e5-939e-744fd76b5bd1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\SIMINPUT\SimInput.vcxproj">
+      <Project>{1d825aa7-eab1-47d0-ac9a-c44db4f0ddfc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\SIMLIB\SimLib.vcxproj">
+      <Project>{19ac892e-eb8c-46be-a73d-d69ad23c41f3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\SimLoop\SimLoop.vcxproj">
+      <Project>{5d9eeb30-2bc8-42cd-b76f-06fb46492b08}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="SIM\VISUAL\Visual.vcxproj">
+      <Project>{608e8feb-fb0d-43e1-8615-91fafa182b89}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="TOOLS\Tools.vcxproj">
+      <Project>{db08a361-37b1-4d37-ae4c-52c3f654dab4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ui95\ui95.vcxproj">
+      <Project>{3be385a8-d11d-4e54-bcee-443ce3c81dbc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ui95_ext\UI95_ext.vcxproj">
+      <Project>{264ab5cd-fb0c-497a-a30f-3eac9624dc7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\campaign\Campaign.vcxproj">
+      <Project>{3052a8d3-71f3-4502-bd4d-37c0cc1b1176}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\common\Common.vcxproj">
+      <Project>{5050729b-efd8-4ed4-800d-41575f41b225}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\comms\UIComms.vcxproj">
+      <Project>{5d2d31c8-287e-4970-9425-b45745b3874c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\dogfight\UIDogfight.vcxproj">
+      <Project>{ba2cb060-f7cc-4258-b356-c743be43937e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\general\UIGeneral.vcxproj">
+      <Project>{c89e7cfd-2b9c-4aea-8f9e-b29747933f9b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\instant\UIInstant.vcxproj">
+      <Project>{30816680-db76-4485-aa3d-3fc966390c0e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\logbook\UILogbook.vcxproj">
+      <Project>{a66ffc82-b2f9-48ff-b169-ec911b9e7512}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\setup\UISetup.vcxproj">
+      <Project>{de5206a9-ef00-4233-a3e1-08df65e1ab65}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\taceng\UITaceng.vcxproj">
+      <Project>{12a1697c-7eb4-4ba0-9764-7386b91c4feb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\SRC\tacref\UITacref.vcxproj">
+      <Project>{08082b97-e1da-491a-acda-e555342c9f82}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UI\UI.vcxproj">
+      <Project>{ec52c00e-cd89-44e8-b356-f8a173f8ed40}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="vu2\Vu2.vcxproj">
+      <Project>{24640b5c-06a2-46fc-8b9f-49779489ae6d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

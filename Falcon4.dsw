@@ -1,0 +1,1079 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "3DLib"=.\Graphics\3DLib\3DLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Acmi"=.\Acmi\Acmi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Aircraft"=.\sim\Aircraft\Aircraft.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Airframe"=.\sim\Airframe\Airframe.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "BSPLib"=.\Graphics\BSPLib\BSPLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Bomb"=.\Sim\Bomb\Bomb.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CampLib"=.\Campaign\CampLib\CampLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CampTask"=.\Campaign\CampTask\CampTask.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CampTool"=.\Campaign\CampTool\CampTool.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "CampUI"=.\Campaign\CampUI\CampUI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Texture
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CampUpd"=.\Campaign\CampUpd\CampUpd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Cockpit"=.\Sim\Cockpit\Cockpit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Comms"=.\Comms\Comms.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DDStuff"=.\Graphics\DDStuff\DDStuff.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Digi"=.\Sim\Digi\Digi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Displays"=.\Sim\Displays\Displays.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Eject"=.\Sim\Eject\Eject.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FCC"=.\Sim\FCC\FCC.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FalcLib"=.\FalcLib\FalcLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FalcSnd"=.\FalcSnd\FalcSnd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Falcon4"=.\Falcon4.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Acmi
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Comms
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FalcLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FalcSnd
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Movie
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tools
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ui95
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UI95_ext
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Vu2
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name 3DLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Bomb
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name BSPLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CampLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CampTask
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CampTool
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CampUI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name CampUpd
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Cockpit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DDStuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Digi
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Displays
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Eject
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Faults
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FCC
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Feature
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Ground
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Guns
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name HDigi
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Helo
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ICP
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Irst
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Lists
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Missile
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Navaids
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Objects
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name OTWDrive
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Radar
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Renderer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Rwr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SimDrive
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SimInput
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SimLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name SimLoop
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Terrain
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Texture
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UICampaign
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UICommon
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UIComms
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UIDogfight
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UIGeneral
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UIInstant
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UILogbook
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UISetup
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UITaceng
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UITacref
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Utils
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Visual
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Weather
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UI
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ResMgr
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Airframe
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Aircraft
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name crashhandler
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nvdxt
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Faults"=.\Sim\Faults\Faults.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Feature"=.\Sim\Feature\Feature.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Ground"=.\Sim\Ground\Ground.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Guns"=.\Sim\Guns\Guns.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "HDigi"=.\Sim\HDigi\HDigi.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Helo"=.\Sim\Helo\Helo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ICP"=.\Sim\ICP\ICP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Irst"=.\Sim\Irst\Irst.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lists"=.\codelib\tools\lists\Lists.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Missile"=.\Sim\Missile\Missile.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Movie"=.\Movie\Movie.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Navaids"=.\Sim\Navaids\Navaids.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "OTWDrive"=.\Sim\OTWDrive\OTWDrive.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Objects"=.\Graphics\Objects\Objects.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Radar"=.\Sim\Radar\Radar.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Renderer"=.\Graphics\Renderer\Renderer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ResMgr"=.\codelib\resources\reslib\ResMgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Rwr"=.\Sim\Rwr\Rwr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SimDrive"=.\Sim\SimDrive\SimDrive.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SimInput"=.\Sim\SimInput\SimInput.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SimLib"=.\Sim\SimLib\SimLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SimLoop"=.\Sim\SimLoop\SimLoop.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Terrain"=.\Graphics\Terrain\Terrain.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Texture"=.\Graphics\Texture\Texture.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tools"=.\Tools\Tools.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UI"=.\UI\UI.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UI95_ext"=.\UI95_ext\UI95_ext.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UICampaign"=.\UI\Src\Campaign\Campaign.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UICommon"=.\UI\Src\Common\Common.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UIComms"=.\UI\Src\Comms\Comms.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UIDogfight"=.\UI\src\Dogfight\UIDogfight.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UIGeneral"=.\UI\Src\General\UIGeneral.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UIInstant"=.\UI\Src\Instant\UIInstant.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UILogbook"=.\UI\Src\Logbook\UILogbook.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UISetup"=.\UI\Src\Setup\UISetup.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UITaceng"=.\UI\Src\Taceng\UITaceng.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UITacref"=.\UI\Src\Tacref\UITacref.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Utils"=.\Graphics\Utils\Utils.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Visual"=.\Sim\Visual\Visual.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Vu2"=.\Vu2\Vu2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Weather"=.\Graphics\Weather\Weather.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "bspbuild"=.\Graphics\BSPbuild\bspbuild.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name BSPLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name 3DLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Texture
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Utils
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Weather
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DDStuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bsputil
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "bsputil"=.\Graphics\BSPutil\bsputil.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "bspview"=.\Graphics\bspview\bspview.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name 3DLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name BSPLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Renderer
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name bsputil
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DDStuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Texture
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Weather
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Utils
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Objects
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Terrain
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "crashhandler"=.\crashhandler\crashhandler.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nvdxt"=.\Graphics\nvdxt\nvdxt.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ui95"=.\ui95\ui95.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

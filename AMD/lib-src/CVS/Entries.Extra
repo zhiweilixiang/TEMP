@@ -1,0 +1,7 @@
+/detect.c///
+/dsp_lib.c///
+/jfdct_lib.c///
+/math_lib.c///
+/matrx_lib.c///
+/quat_lib.c///
+/vect_lib.c///

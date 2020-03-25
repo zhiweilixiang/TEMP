@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{52d498b3-591f-4c6f-a915-50c05bd9c171}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9e84e09b-eae0-4a8d-9710-19a2e74b2bf6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cbeye.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdogflt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdrawlst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="centity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cfeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cflight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cicons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmapmvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpackage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpilot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cplayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csquad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cthreat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cvictory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cwaypnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cbeye.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdogflt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdrawlst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="centity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cfeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cflight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chistory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cicons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmapmvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpackage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cpilot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cplayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="csquad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cthreat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cvictory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cwaypnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui95_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

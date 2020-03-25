@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{53e37cb3-a991-47df-a451-c98943c455a5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ec1ba63f-1bb0-489b-9f8f-a8970ca13627}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d33d5473-c9cd-40d3-88c3-0c0468fd3628}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\src\F4Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Src\Winmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Falclib\Include\falcon4.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ComSup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Falclib\Include\4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\Bigbmap.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\Bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\bitmap8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\bitmap9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\Falcon4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\Font1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\Mainfnt.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\mainfnto.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\midfnt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Falclib\Include\midfnton.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Falclib\Include\cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\cursor.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\Cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\Cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\Cursor3.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\Cursor4.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\Cursor5.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\cursor6.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FALCLIB\INCLUDE\cursor7.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FALCLIB\INCLUDE\cursor8.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\drag_rm.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\f16.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\f16_on.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\f16_on_r.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\f16_rm.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\hdrag_of.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\HDRAGON.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\HDRAGRM.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\listf16.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\loading.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\mapzoom.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\not.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\stpt.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\stpt_dra.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\target.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\text.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_add_b.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_add_f.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_add_p.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_add_s.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_add_t.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_drag_.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_erase.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\ui_paint.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\vdrag.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\vdrag_rm.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\vdragon.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Falclib\Include\mainfnt.fnt" />
+    <None Include="Falclib\Include\midfnt.fnt" />
+  </ItemGroup>
+</Project>
